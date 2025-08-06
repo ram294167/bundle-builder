@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bundle Builder</title> 
+  <link rel="icon" href="data:,">
+</head>  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <main class="product-grid" id="productGrid"></main>
+
+    <aside class="bundle-sidebar">
+      <h4>Create your bundle to get 30% discount</h4>
+
+      <div class="progress-container">
+        <div id="progressBar" class="progress-bar"></div>
+        <p id="progressText">0/3 added</p>
+      </div>
+
+      <ul id="bundleList" class="bundle-list">
+        <!-- JS will inject items like the structure above -->
+      </ul>
+
+      <div class="summary">
+        <div class="summary-line">
+          <span>Discount:</span><span id="discountText">$0</span>
+        </div>
+        <div class="summary-line">
+          <span>Subtotal:</span><span id="subtotalText">$0</span>
+        </div>
+        <button id="addToCart" disabled>Add Bundle to Cart</button>
+      </div>
+    </aside>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
